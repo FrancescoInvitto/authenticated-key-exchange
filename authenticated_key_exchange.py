@@ -1,7 +1,6 @@
 #===================================================#
 # Project Assignment: Authenticated Key Exchange    #
 # Student: Francesco Invitto                        #
-# Badge Number: 325559                              #
 #===================================================#
 
 import random
