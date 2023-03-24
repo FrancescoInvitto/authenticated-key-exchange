@@ -111,7 +111,7 @@ in hexadecimal: 516bddd8266c51b25850cddde9f0aa999d2d112b590a5f977766faf4c46b4615
 
 The last 16 bytes of the DH secret (that the bytes from from 112 to 127) were used as k_m: 2fa27da99e3f1eb13e456ea06eb24de6
 
-#Additional notes
+# Additional notes
   - When an array of bytes is obtained as representation of an integer an vice versa, attention must be payed to the order of bytes (big-endian or little-    endian) and the sign bit.
    In particular in the proposed protocol we consider the integers encoded in byte arrays in big-endian byte-order (also called "network order"): the most    significant byte is in the zeroth element of the array (note: the BigInteger of Java handles the conversion done by the method toByteArray() in this      way).
    When converting a positive integer to a byte array, if the most significant bit of the most significant byte of the array (the 0th byte) is 1,            sometimes   an extra 0x00 byte is added at the beginning as new 0th byte in order to have a two's-complement representation of a positive number. The      length of the   resulting array is then increased by 1
